@@ -1,0 +1,497 @@
+html {
+    background-color: hsl(0, 0%, 25%);
+    height: 100vh;
+    width: 100%;
+    /*background-image: url("../images/COLE.png");*/
+    background: linear-gradient(hsl(0, 0%, 25%), #efefef);
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    color: hsl(0, 0%, 25%);
+    font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#resume-pdf {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+}
+
+.sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color: hsl(0, 0%, 25%);
+    overflow:hidden;
+    float: left;
+    /*box-shadow: 0px 0px 25px hsl(0, 0%, 25%);*/
+    z-index: 950;
+}
+
+.nav-items {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-logo {
+    width: 80%;
+    margin-top: 10%;
+    padding-left: 10%;
+    padding: 2% 10%;
+    box-shadow: 0px 0px 2px black;
+    transition: 0.1s ease-out;
+}
+
+.nav-logo:hover {
+    box-shadow: 0px 0px 4px yellow;
+}
+
+.social-media-buttons {
+    padding: 0 0;
+    margin:  5% 0;
+    width: 100%;
+    height: 10%;
+}
+
+.social-media-buttons .fa {
+    margin: 0 0;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 25px;
+    height: 100%;
+    transition: 0.125s ease-out;
+}
+
+.social-media-buttons .fa:hover{
+    color: hsl(0, 0%, 25%);
+    background-color: yellow;
+    box-shadow: 0px 0px 5px rgba(0,0,0,1);
+}
+
+.nav-item a {
+    color: white;
+    float: left;
+    text-decoration: none;
+    width: 80%;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    padding: 2% 10%;
+    box-shadow: 0px 0px 1px rgba(255,255,255,0.4);
+    transition: 0.125s ease-out;
+    font-size: 18px;
+}
+
+.nav-item a:hover {
+    color: hsl(0, 0%, 25%);
+    background-color: yellow;
+    box-shadow: 0px 0px 5px rgba(0,0,0,1);
+}
+
+#nav-resume a {
+    margin-top: 15%;
+}
+
+.container {
+    margin: 0 0;
+    margin-left: 20%;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+}
+
+.section-wrapper {
+    margin: 0% 3%;
+    padding: 2% 0;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section h1 {
+    margin-bottom: 15px;
+}
+
+#home {
+    background: linear-gradient(hsl(0, 0%, 25%), #efefef);
+}
+
+.home-background{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/COLE.png");
+    /*background-color: rgba(248, 125, 132, 1);*/
+    /*background-color: rgba(3, 125, 132, 1);*/
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: repeat-y;
+    background-size: 80%;
+}
+
+#about-me {
+    background-color: #efefef;
+}
+
+.about-row{
+    width: 100%;
+    padding: 0;
+    margin: 0 2%;
+    display: flex;
+}
+
+.about-statement {
+    display: inline-block;
+    width: 60%;
+}
+
+.about-statement p {
+    text-indent: 30px;
+}
+
+.about-right {
+    display: inline-block;
+    width: 33%;
+    text-align: right;
+}
+
+.about-right img {
+    max-width: 79%;
+    max-height: 100%;
+    box-shadow: 0px 0px 5px black;
+    margin: 5px 0px;
+}
+
+.about-right ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+#my-projects {
+    background-color: #dfdfdf;
+}
+
+.project-type-title {
+    font-weight: normal;
+    margin: 2% 0;
+    font-size: 2.75vh;
+}
+
+.cs-projects {
+    width: 100%;
+}
+
+.cs-projects-row {
+    height: 50%;
+    width: 85%;
+    padding: 0 0;
+    background-color: hsl(0, 0%, 83%);
+    box-shadow: 0 0 5px hsl(0, 0%, 50%);
+    margin: 0.5% 0;
+    margin-left: 5%;
+    padding: 0 2%;
+    display: inline-flex;
+    border-radius: 5px;
+}
+
+.cs-project-info {
+    width: 55vw;
+    height: 13.5vw;
+    margin: 12px 2px;
+    padding: 0 0;
+    display: inline-block;
+}
+
+.cs-project-right {
+    width: 30vw;
+    height: 13.5vw;
+    margin: 12px 2px;
+    padding: 0 0;
+    display: inline-block;
+    box-shadow: 0 0 2px black;
+}
+
+.cs-project-square-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: 0.15s ease;
+    cursor: pointer;
+}
+
+.cs-project-square-overlay h1 {
+    color: white;
+    text-align: center;
+    margin-left: 3%;
+    margin-bottom: 30%;
+    margin-top: 25%;
+    font-size: 1.6vw;
+    font-weight: normal;
+}
+
+.cs-project-square-overlay h2 {
+    color: white;
+    margin-left: 3%;
+    font-size: 1vw;
+    font-weight: normal;
+}
+
+.cs-project-square-overlay:hover{
+    opacity: 1;
+}
+
+.project-divider {
+    height: 1px;
+    width: 80%;
+    margin: 3% 10%;
+    margin-top: 4%;
+    background-color: hsl(0, 0%, 25%);
+}
+
+.film-projects {
+    width: 100%;
+}
+
+.film-projects-row {
+    height: 50%;
+    width: 100%;
+    padding: 0 0;
+    margin: 0 0;
+    display: inline-flex;
+}
+
+.film-project-column {
+    width: 33vw;
+    height: 14.85vw;
+    margin: 2px 2px;
+    padding: 0 0;
+    display: inline-block;
+}
+
+.project-square {
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+.project-square img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.film-project-square-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: 0.15s ease;
+    cursor: pointer;
+}
+
+.film-project-square-overlay h1 {
+    color: white;
+    margin-left: 3%;
+    margin-bottom: 30%;
+    margin-top: 2px;
+    font-size: 2vw;
+    font-weight: normal;
+}
+
+.film-project-square-overlay h2 {
+    color: white;
+    margin-left: 3%;
+    font-size: 1vw;
+    font-weight: normal;
+}
+
+.film-project-square-overlay:hover{
+    opacity: 1;
+}
+
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999;
+    display: none;
+    text-align: center;
+}
+
+#modaliframe {
+    display: block;
+    position: relative;
+    margin: 7% 20vw;
+    width: 60vw;
+    height: 33.75vw;
+    box-shadow: 0 0 40px black;
+    background-color: black;
+}
+
+#video-caption {
+    display: block;
+    position: relative;
+    margin:0 20vw;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 3vh;
+    width: 60vw;
+    vertical-align: middle;
+    color: white;
+}
+
+.close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: white;
+    color: black;
+}
+
+#contact-me {
+    background-color: #cfcfcf;
+}
+
+.contact-form{
+    margin-left: 4%;
+}
+
+.form-column {
+    width: 46%;
+    height: 100%;
+    float: left;
+    margin-right: 4%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid rgba(3, 125, 132, 1); /* dark border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: hsl(0, 0%, 80%);
+    font-size: 14px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: hsl(0, 0%, 70%);
+    color: hsl(0, 0%, 25%);
+    padding: 12px 20px;
+    border: 1px solid hsl(0, 0%, 25%);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* When moving the mouse over the submit button, add a darker black color */
+input[type=submit]:hover {
+    color: hsl(0, 0%, 10%);
+    box-shadow: 0px 0px 5px black;
+}
+
+input:placeholder-shown, textarea:placeholder-shown {
+    background-color: hsl(0, 0%, 70%);
+    border: 1px solid #ccc; /* Gray border */
+}
+
+
+input::placeholder, textarea::placeholder {
+    color: hsl(0, 0%, 45%);
+}
+
+input:focus,textarea:focus {
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px black;
+}
+
+#footer {
+    background-color: #efefef;
+    text-align: right;
+}
+
+#footer .copyright {
+    font-size: 14px;
+}
+
+@media only screen and (max-device-width: 480px) { /*and (max-device-width: 480px)*/
+    .sidebar{
+        display: none;
+    }
+
+    .container {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .home-background{
+        background-size: 100%;
+    }
+
+    .about-row{
+        display: inline;
+    }
+
+    .about-statement {
+        width: 100%;
+    }
+
+    .about-right img {
+        max-width: 250px;
+    }
+
+    .about-right{
+        width: 100%;
+    }
+
+    .film-project-column {
+        height: 18.56vw;
+    }
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cole Corrente</title>
+    <meta name="description" content="Cole Corrente's personal website.">
+    <meta name="author" content="Cole Corrente">
+    <meta name="keywords" content="Cole, Nicholas, Corrente, Nicholas Corrente, Cole Corrente, computer, science, engineer, film, rhode, island">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="canonical" href="/">
+
+    <!-- social media icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+
+    <!-- jquery3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- custom javascript -->
+    <script src="javascript/index.js"></script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105689205-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-105689205-1');
+    </script>
+
+</head>
+<body>
+
+    <object id="resume-pdf" data="files/resume.pdf" type="application/pdf">
+        <p><a href="files/resume.pdf">my resume</a></p>
+    </object>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <ul class="nav-items">
+            <a href="#home"><img class="nav-logo" src="images/COLE.png" alt="COLE"></a>
+            <div class="social-media-buttons">
+                <a href="https://www.linkedin.com/in/nicholascorrente/" class="fa fa-linkedin"></a>
+                <a href="https://www.github.com/colecorrente" class="fa fa-github"></a>
+            </div>
+            <li class="nav-item"><a href="#about-me">about me</a></li>
+            <li class="nav-item"><a href="#my-projects">my projects</a></li>
+            <li class="nav-item"><a href="#contact-me">contact me</a></li>
+            <li class="nav-item" id="nav-resume" onclick="triggerResume()"><a style="cursor:pointer">my resume</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <!-- HOME SECTION -->
+        <div id="home">
+            <div class="home-background"></div>
+        </div>
+
+        <!-- ABOUT ME SECTION -->
+        <div class="section" id="about-me">
+            <div class="section-wrapper">
+                <h1>about me</h1>
+                <div class="about-row">
+                    <div class="about-statement">
+                        <p>
+                            At four years old, I persuaded my parents to buy me Lego sets and help me engineer massive configurations. Soon after that, I learned about robotics and commandeered my mom’s camera to document it all. I distinctly remember Steve Jobs announcing the release of the <i>App Store</i>; I was eleven years old. Dreaming of designing my own computer application one day, I taught myself to code. At fourteen, I discovered YouTube and  became a YouTube Partner - placing my coding dream on hold.
+                        </p>
+                        <p>
+                            A year later, promotional videos and animated tutorials interested me while working for Machine Hero, a media consulting firm in Rhode Island. I was given the independence to work/intern on major internet advertising campaigns, the Reebok <i>CHECKLIGHT</i>. My interest in engineering re-emerged at a summer pre-college program nearby at Brown University yet wanted to experience my undergraduate education in a new part of the country. I traveled to California where is rescovered my passion for computer science.
+                        </p>
+                        <p>
+                            I am currently a twenty year old college junior and the first Pomona College student accepted into the dual-degree program at the Thayer School of Engineering at Dartmouth College. I will spend this year at Dartmouth and return to Pomona as a senior and graduate in 2019 with a degree in Computer Science. After graduation, I’ll complete a fifth year of engineering back at Dartmouth and will graduate in 2020 with a Bachelor of Engineering (BE) degree.
+                        </p>
+                    </div>
+                    <div class="about-right">
+                        <h2>Nicholas (Cole) Corrente</h2>
+                        <img src="images/profile.jpg" alt="">
+                        <ul>
+                            <li><p style="font-size: 15px">Pomona College Class of 2019</p></li>
+                            <li><p style="font-size: 12px"><i>BA in Computer Science</i></p></li>
+                            <li><p style="font-size: 15px">Dartmouth College Class of 2020</p></li>
+                            <li><p style="font-size: 12px"><i>BE in Computer Engineering</i></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MY PROJECTS SECTION -->
+        <div class="section" id="my-projects">
+            <div class="section-wrapper">
+                <h1>my projects</h1>
+                <h2 class="project-type-title">Computer Science Projects</h2>
+                <div class="cs-projects">
+                    <div class="cs-projects-row">
+                        <div class="cs-project-info">
+                            <h2>Hololens Development</h2>
+                            <h4>Gilbane Building Company</h4>
+                            <br>
+                            <p>
+                                I led the development of the Gilbane platform for the Microsoft HoloLens.
+                                I designed and created an app for the Microsoft HoloLens for viewing and
+                                controlling 3D building models and presented my work during on site press
+                                release with the MIT Tech Review.
+                            </p>
+                        </div>
+                        <div class="cs-project-right">
+                            <div class="project-square" onclick="goTo('https://www.technologyreview.com/s/602124/augmented-reality-could-speed-up-construction-projects')">
+                                <img src="images/video_thumbnails/gilbane_thumbnail.jpg" alt="">
+                                <div class="cs-project-square-overlay">
+                                    <h1>MIT Tech Review Article</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cs-projects-row">
+                        <div class="cs-project-info">
+                            <h2>Music to LED Display FPGA</h2>
+                            <h4>Digital Electronics Final Project</h4>
+                            <br>
+                            <p>
+                                I led the development of an LED music visualizer using an FPGA and breadboard, written in VHLD.
+                            </p>
+                        </div>
+                        <div class="cs-project-right">
+                            <div class="project-square" onclick="goTo('#about-me')">
+                                <img src="images/default.jpg" alt="">
+                                <div class="cs-project-square-overlay">
+                                    <h1>Project Report</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cs-projects-row">
+                        <div class="cs-project-info">
+                            <h2>Weekend Report</h2>
+                            <h4>iOS App</h4>
+                            <br>
+                            <p>
+                                I am developing an iOS app that tracks your weekend activities such as your locations, new contacts, photos taken, and music played.
+                            </p>
+                        </div>
+                        <div class="cs-project-right">
+                            <div class="project-square" onclick="goTo('#about-me')">
+                                <img src="images/default.jpg" alt="">
+                                <div class="cs-project-square-overlay">
+                                    <h1>Coming Soon</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-divider"></div>
+                <h2 class="project-type-title">Film Projects</h2>
+                <div class="film-projects">
+                    <div class="film-projects-row">
+                        <div class="film-project-column">
+                            <div class="project-square" onclick="presentModal('reebok')">
+                                <img src="images/video_thumbnails/reebok_thumbnail.jpg" alt="">
+                                <div class="film-project-square-overlay">
+                                    <h1>Reebok Zig Tech Reel</h1>
+                                    <h2>Machine Hero</h2>
+                                    <h2>Film Reel/Compilation</h2>
+                                    <h2>2014</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="film-project-column">
+                            <div class="project-square" onclick="presentModal('mbthere')">
+                                <img src="images/video_thumbnails/mbthere_thumbnail.jpg" alt="">
+                                <div class="film-project-square-overlay">
+                                    <h1>MBe There</h1>
+                                    <h2>Moses Brown School</h2>
+                                    <h2>Short Film</h2>
+                                    <h2>2014</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="film-project-column">
+                            <div class="project-square" onclick="presentModal('rogerw')">
+                                <img src="images/video_thumbnails/rogerw_thumbnail.jpg" alt="">
+                                <div class="film-project-square-overlay">
+                                    <h1>RWU Law Intro</h1>
+                                    <h2>Roger Williams Law School</h2>
+                                    <h2>Short Film</h2>
+                                    <h2>2014</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="film-projects-row">
+                        <div class="film-project-column">
+                            <div class="project-square" onclick="presentModal('money')">
+                                <img src="images/video_thumbnails/money_thumbnail.jpg" alt="">
+                                <div class="film-project-square-overlay">
+                                    <h1>What is Money?</h1>
+                                    <h2>Moses Brown School - Macro Economics</h2>
+                                    <h2>company</h2>
+                                    <h2>2014</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="film-project-column">
+                            <div class="project-square" onclick="presentModal('divots')">
+                                <img src="images/video_thumbnails/divot_thumbnail.jpg" alt="">
+                                <div class="film-project-square-overlay">
+                                    <h1>How to Take Divots</h1>
+                                    <h2>Metacomet Country Club</h2>
+                                    <h2>Tutorial</h2>
+                                    <h2>2013</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="film-project-column">
+                            <div class="project-square" onclick="presentModal('squadlocker')">
+                                <img src="images/video_thumbnails/squadlocker_thumbnail.jpg" alt="">
+                                <div class="film-project-square-overlay">
+                                    <h1>SquadLocker Promo</h1>
+                                    <h2>SquadLocker</h2>
+                                    <h2>Website Tutorial</h2>
+                                    <h2>2012</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="video-modal" onclick="closeModal()">
+
+            <div class="video-player">
+                <span class="fa fa-close close-button"></span>
+                <iframe id="modaliframe" src="" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen autoPlay="true" fullscreenbutton="false"></iframe>
+                <p id="video-caption"></p>
+            </div>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div class="section" id="contact-me">
+            <div class="section-wrapper">
+                <h1>contact me</h1>
+                <form class="contact-form" action="https://formspree.io/colecorrente@gmail.com" method="post">
+
+                    <div class="form-column">
+                        <label for="email">E-Mail *</label>
+                        <input type="text" id="email" name="_replyto" placeholder="Your e-mail address..." required>
+
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="_subject" placeholder="Your message subject..." required>
+                    </div>
+                    <div class="form-column">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Your message..." style="height:217px" required></textarea>
+                    </div>
+
+                    <input type="hidden" name="_next" value="/">
+
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <sub>* marks required field</sub><br><br>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER SECTION -->
+        <div id="footer">
+            <div class="section-wrapper">
+                <div class="copyright">
+                    <p>designed and coded by cole corrente <pre></pre> © copyright 2017</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
