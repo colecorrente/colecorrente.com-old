@@ -10,7 +10,6 @@ html {
     background-size: 100%;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -229,6 +228,7 @@ body {
     margin: 12px 2px;
     padding: 0 0;
     display: inline-block;
+    padding-right: 10px;
 }
 
 .cs-project-right {
@@ -466,42 +466,32 @@ input:focus,textarea:focus {
     font-size: 14px;
 }
 
+#mobile-resume {
+    display: none;
+    background-color: #dfdfdf;
+    text-align: center;
+}
+
+#mobile-resume a {
+    text-decoration: none;
+    color: hsl(0, 0%, 25%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
 @media only screen  and (max-device-width: 480px) { /*and (max-device-width: 480px)*/
-/*@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : portrait) {*/
 
     .sidebar{
         display: none;
     }
+
+    .home-background{
+        height: 33vh;
+    }
+
     #resume-pdf {
         display: none;
     }
-/*
-    h1 {
-        font-size: 70px;
-    }
-
-    h2,h3 {
-        font-size: 55px;
-    }
-
-    h4,h5 {
-        font-size: 45px;
-    }
-
-    p {
-        font-size: 40px;
-    }
-
-    .about-right ul li p {
-        font-size: 35px;
-    }
-
-    .about-right ul li p i{
-        font-size: 30px;
-    }*/
 
     .container {
         margin-left: 0px;
@@ -545,8 +535,8 @@ and (orientation : portrait) {*/
     .film-project-column {
         height: 18.56vw;
     }
-/*
-    form, input[type=text], input[type=submit], textarea {
-        font-size: 35px;
-    }*/
+
+    #mobile-resume {
+        display: inherit;
+    }
 }
