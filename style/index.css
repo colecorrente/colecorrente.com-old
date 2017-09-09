@@ -475,6 +475,9 @@ and (orientation : portrait) {*/
     .sidebar{
         display: none;
     }
+    #resume-pdf {
+        display: none;
+    }
 /*
     h1 {
         font-size: 70px;
