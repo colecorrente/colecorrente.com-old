@@ -188,7 +188,14 @@ body {
 
 .about-right ul {
     list-style: none;
-    font-size: 14px;
+}
+
+.about-right ul li p {
+    font-size: 15px;
+}
+
+.about-right ul li p i{
+    font-size: 12px;
 }
 
 #my-projects {
@@ -206,7 +213,6 @@ body {
 }
 
 .cs-projects-row {
-    height: 50%;
     width: 85%;
     padding: 0 0;
     background-color: hsl(0, 0%, 83%);
@@ -220,7 +226,6 @@ body {
 
 .cs-project-info {
     width: 55vw;
-    height: 13.5vw;
     margin: 12px 2px;
     padding: 0 0;
     display: inline-block;
@@ -457,13 +462,38 @@ input:focus,textarea:focus {
     text-align: right;
 }
 
-#footer .copyright {
+#footer .copyright{
     font-size: 14px;
 }
 
 @media only screen and (max-device-width: 480px) { /*and (max-device-width: 480px)*/
+
     .sidebar{
         display: none;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2,h3 {
+        font-size: 55px;
+    }
+
+    h4,h5 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+
+    .about-right ul li p {
+        font-size: 35px;
+    }
+
+    .about-right ul li p i{
+        font-size: 30px;
     }
 
     .container {
@@ -484,14 +514,32 @@ input:focus,textarea:focus {
     }
 
     .about-right img {
-        max-width: 250px;
+        max-width: 60%;
     }
 
     .about-right{
+        margin-top: 8%;
         width: 100%;
+    }
+
+    .film-projects-row {
+        height: 100%;
+        display: inline;
+    }
+
+    .film-project-column {
+        display: inline;
+    }
+
+    .cs-project-right {
+        height: 16.875vw;
     }
 
     .film-project-column {
         height: 18.56vw;
+    }
+
+    form, input[type=text], input[type=submit], textarea {
+        font-size: 35px;
     }
 }
