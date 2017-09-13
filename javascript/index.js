@@ -28,7 +28,7 @@ function triggerResume(){
 
         //remove  resume button styles
         button
-        .text('my resume')
+        .text('resume')
         .css({
             color: 'white',
             backgroundColor: 'inherit',
