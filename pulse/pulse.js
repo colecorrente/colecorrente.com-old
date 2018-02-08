@@ -76,7 +76,8 @@ function optimizeData(data, demographic){
         ? demographicValues[0] : "no demographic";
 
         if (optimizedData[itemDemographic] == null) {
-            optimizedData[itemDemographic] = { itemSlection:1 };
+            optimizedData[itemDemographic] = {};
+        optimizedData[itemDemographic][itemSelection] = 1;
         } else {
             if (optimizedData[itemDemographic][itemSelection] == null) {
                 optimizedData[itemDemographic][itemSelection] = 1;
