@@ -77,7 +77,7 @@ function optimizeData(data, demographic){
 
         if (optimizedData[itemDemographic] == null) {
             optimizedData[itemDemographic] = {};
-        optimizedData[itemDemographic][itemSelection] = 1;
+            optimizedData[itemDemographic][itemSelection] = 1;
         } else {
             if (optimizedData[itemDemographic][itemSelection] == null) {
                 optimizedData[itemDemographic][itemSelection] = 1;
@@ -88,14 +88,14 @@ function optimizeData(data, demographic){
 
         // include data in "demographicBreakdown"
         optimizedData.demographicBreakdown[itemDemographic] =
-            optimizedData.demographicBreakdown[itemDemographic] == null ? 1 :
-            optimizedData.demographicBreakdown[itemDemographic] += 1;
+        optimizedData.demographicBreakdown[itemDemographic] == null ? 1 :
+        optimizedData.demographicBreakdown[itemDemographic] += 1;
         optimizedData.demographicBreakdown.all += 1;
 
         // include data in "all"
         optimizedData.all[itemSelection] =
-            optimizedData.all[itemSelection] == null
-            ? 1 : optimizedData.all[itemSelection] += 1;
+        optimizedData.all[itemSelection] == null
+        ? 1 : optimizedData.all[itemSelection] += 1;
 
         /*
         FOR TESTING
@@ -103,13 +103,13 @@ function optimizeData(data, demographic){
 
         // for testing demographic values
         testCounts[itemDemographic] =
-            testCounts[itemDemographic] == null
-            ? 1 : testCounts[itemDemographic] + 1;
+        testCounts[itemDemographic] == null
+        ? 1 : testCounts[itemDemographic] + 1;
 
         // for testing selection values
         testCounts[itemSelection] =
-            testCounts[itemSelection] == null
-            ? 1 : testCounts[itemSelection] + 1;
+        testCounts[itemSelection] == null
+        ? 1 : testCounts[itemSelection] + 1;
 
         // for testing "all" value of demographicBreakdown
         testCounts.all += 1;
@@ -154,7 +154,7 @@ function testData(){
         // dont treat demogrpahicBreakdown as a demographic to be tested
         if (item != "demographicBreakdown") {
             var test = optimizedData.demographicBreakdown[item]
-                    == testCounts[item];
+            == testCounts[item];
             if (test) {
                 console.log("%cPASS    - " + item + "        " +
                 optimizedData.demographicBreakdown[item]
